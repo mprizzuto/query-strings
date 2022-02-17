@@ -1,4 +1,4 @@
-<?php require "../data/nav-data.php";?>
+<?php require "./data/nav-data.php";?>
 
 <nav class="site-menu">
 	<?php foreach($navItems as $nav): ?>
