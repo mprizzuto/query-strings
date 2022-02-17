@@ -1,0 +1,21 @@
+*, *:before, *:after {
+	box-sizing:  inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+inner-column {
+	display: block;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	min-height: 100vh;
+}
