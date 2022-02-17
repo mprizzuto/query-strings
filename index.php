@@ -3,7 +3,19 @@ require "./components/header.php";
 // require "../functions.php";
 ?>
 
-<h1>homepage</h1>
+<main class="site-main">
+	<section class="<?=$page?>">
+		<inner-column>
+			<?php 
+			renderPage($page);
+
+			if (isset($page)) {
+				generate404();
+			}
+			?>
+		</inner-column>
+	</section>
+</main>
 
 <?php 
 require "./components/footer.php";
