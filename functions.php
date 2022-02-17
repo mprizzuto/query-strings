@@ -9,6 +9,34 @@ function formatInput($input) {
 // variables
 $page = $_GET["page"] ?? null;
 
+// message for home.php
+// $welcomeMessage = "";
+
+function renderPage($page) {
+	switch($page) {
+		case "coffee":
+			include "./pages/coffee.php";
+		  break; 
+		default:
+		  include "./pages/home.php";
+	}
+}
+
+function generate404() {
+	// $welcomeMessage = "!";
+	$validQueryStrings = ["coffee", "coffee-details"];
+
+	if(!in_array($_GET["page"] ?? null, $validQueryStrings)) {
+		$welcomeMessage = "error!";
+		require_once "./pages/404.php";
+		echo "true";
+		return true;
+	} else {
+		echo "false";
+		return false;
+	}
+}
+
 
 ?>
 
