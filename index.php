@@ -1,7 +1,8 @@
 <?php 
 require "./components/header.php";
-// require "../functions.php";
+var_dump($_GET);
 ?>
+
 
 <main class="site-main">
 	<section class="<?=$page?>">
