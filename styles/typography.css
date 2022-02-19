@@ -15,4 +15,24 @@ inner-column {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 700px;
+	padding:  10px;
+}
+
+.coffee-list strong {
+	display:  block;
+}
+
+em {
+	font-style: italic;
+}
+
+nav a {
+	display: inline-block;
+	padding:  .05em;
+}
+
+/*coffee page*/
+.brand {
+	margin-top: 30px;
+	text-transform: capitalize;
 }
