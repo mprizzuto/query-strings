@@ -31,13 +31,19 @@ function renderPage($page) {
 function renderDetailPage() {
   require "./data/coffee-details.php";
 
-  // $coffeeDetail = $_GET['detail'] ?? null;
   $coffeeDetail = $_GET['detail'] ?? null;
   switch($coffeeDetail) {
     case "golden":
-    echo renderCoffeeDetail($goldenBrew);
-    // echo "golden";
-    break;
+      echo renderCoffeeDetail($goldenBrew);
+      break;
+
+    case "blackheart":
+      echo renderCoffeeDetail($blackheart);
+      break;
+
+    case "tic":
+      echo renderCoffeeDetail($ticBrew);
+      break;
 
     default:
     echo "coffee detail not found";
@@ -79,17 +85,14 @@ function generate404() {
 
 <?php
   function renderCoffeeDetail(iterable $coffee) {
-    $result = "";
-  foreach($coffee as $key => $value) { 
-    $result .= <<<heredoc
-    <li>{$key} {$value}</li>
-    
-    heredoc;
-    // return $result;
-  }
-  return $result;
+    $result = "<ul>";
+    foreach($coffee as $key => $value) { 
+      $result .= <<<heredoc
+      <li>{$key} {$value}</li>
+      heredoc;
+    }
+    return $result . "</ul>";
  }
-
 ?>
 
 
