@@ -2,7 +2,7 @@
 $coffeeBrands = [
   [
   	"brand" => "golden brew",
-  	"photo" => "./images/placeholder.png",
+  	"photo" => "./images/golden.jpg",
   	"alt" => "golden coffee beans",
   	"price" => 20.00,
   	"teaser" => "the goldenst of brews",
@@ -10,7 +10,7 @@ $coffeeBrands = [
   ],
   [
 	  "brand" => "blackheart coffee",
-		"photo" => "./images/placeholder.png",
+		"photo" => "./images/blackheart.jpg",
 		"alt" => "the blackest coffee beans",
 		"price" => 35.00,
 		"teaser" => "coffee as black as your heart",
@@ -18,7 +18,7 @@ $coffeeBrands = [
   ],
   [
 	  "brand" => "tic brew",
-		"photo" => "./images/placeholder.png",
+		"photo" => "./images/tourettes.jpg",
 		"alt" => "teal blue coffee beans",
 		"price" => 25.00,
 		"teaser" => "support an amazing cause",
