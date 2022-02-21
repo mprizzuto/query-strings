@@ -19,3 +19,13 @@ main {
 	flex-grow: 1;
 	min-height: 100vh;
 }
+
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	height: auto;
+	width:  100%;
+}

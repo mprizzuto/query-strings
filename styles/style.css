@@ -1,3 +1,14 @@
 @import "reset.css";
 @import "typography.css";
 @import "setup.css";
+
+/*images*/
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
