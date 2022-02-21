@@ -8,7 +8,6 @@ function formatInput($input) {
 
 // variables
 $page = $_GET["page"] ?? null;
-// $coffeeDetail = $_GET['detail'] ?? null;
 
 // message for home.php
 // $welcomeMessage = "";
@@ -88,7 +87,7 @@ function generate404() {
     $result = "<ul>";
     foreach($coffee as $key => $value) { 
       $result .= <<<heredoc
-      <li>{$key} {$value}</li>
+      <li><strong>{$key}</strong> {$value}</li>
       heredoc;
     }
     return $result . "</ul>";
