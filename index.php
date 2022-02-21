@@ -1,8 +1,7 @@
 <?php 
 require "./components/header.php";
-var_dump($_GET);
+// var_dump($_GET);
 ?>
-
 
 <main class="site-main">
 	<section class="<?=$page?>">
