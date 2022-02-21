@@ -14,7 +14,7 @@ $coffeeBrands = [
 		"alt" => "the blackest coffee beans",
 		"price" => 35.00,
 		"teaser" => "coffee as black as your heart",
-    "link" => "?page=coffee-detail&blackheart"
+    "link" => "?page=coffee-detail&detail=blackheart"
   ],
   [
 	  "brand" => "tic brew",
@@ -22,7 +22,7 @@ $coffeeBrands = [
 		"alt" => "teal blue coffee beans",
 		"price" => 25.00,
 		"teaser" => "support an amazing cause",
-    "link" => "?page=coffee-detail&blackheart"
+    "link" => "?page=coffee-detail&detail=tic"
   ],
 
 ];
