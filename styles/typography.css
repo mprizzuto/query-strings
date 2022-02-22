@@ -3,11 +3,15 @@ h1, h2 {
 }
 
 h1 {
-	font-size:  3em;
+	font-size:  2.5em;
 }
 
 h2 {
 	font-size:  1.5em;
+}
+
+h1 + p, h2 + p {
+	margin-top: 15px;
 }
 
 inner-column {
@@ -32,7 +36,7 @@ em {
 
 nav a {
 	display: inline-block;
-	padding:  .05em;
+	padding:  .08em;
 }
 
 /*coffee page*/
@@ -45,3 +49,17 @@ nav a {
 strong {
 	font-weight: bolder;
 }
+
+/*forms*/
+form {
+	line-height: 3;
+}
+
+label {
+	display:  block;
+}
+
+.detail-list {
+	margin-top: 10px;
+}
+

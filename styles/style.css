@@ -2,6 +2,10 @@
 @import "typography.css";
 @import "setup.css";
 
+* {
+	/*outline:  3px solid red;*/
+}
+
 /*images*/
 picture {
 	display: block;
@@ -12,3 +16,4 @@ picture img {
 	height: auto;
 	width: 100%;
 }
+
