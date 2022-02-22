@@ -22,6 +22,14 @@ function renderPage($page) {
       include "./pages/coffee-detail.php";
       break;
 
+    case "bean-form":
+      include "./pages/bean-form.php";
+      break;
+
+    case "bean-results":
+      include "./pages/bean-results.php";
+      break;
+
     default:
       include "./pages/home.php";
   }
@@ -45,13 +53,13 @@ function renderDetailPage() {
       break;
 
     default:
-    echo "coffee detail not found";
+      echo "coffee detail not found";
   }
 }
 
 function generate404() {
   // $welcomeMessage = "!";
-  $validQueryStrings = ["coffee", "coffee-detail"];
+  $validQueryStrings = ["coffee", "coffee-detail", "bean-form", "bean-results"];
 
   if(!in_array($_GET["page"] ?? null, $validQueryStrings)) {
     $welcomeMessage = "error!";
@@ -63,7 +71,6 @@ function generate404() {
     return false;
   }
 }
-
 
 ?>
 
@@ -84,7 +91,7 @@ function generate404() {
 
 <?php
   function renderCoffeeDetail(iterable $coffee) {
-    $result = "<ul>";
+    $result = "<ul class='detail-list'>";
     foreach($coffee as $key => $value) { 
       $result .= <<<heredoc
       <li><strong>{$key}</strong> {$value}</li>
@@ -115,3 +122,13 @@ function generate404() {
   <?php endforeach; ?>
   </ul>
 <?php } ?>
+
+<?php 
+function sanitizeInput($input) {
+  $input .= htmlspecialchars($input);
+  $input .= stripslashes($input);
+  $input .= trim($input);
+  return $input;
+}
+
+?>
